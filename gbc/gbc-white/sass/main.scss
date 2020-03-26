@@ -1,0 +1,107 @@
+
+BODY {
+	-webkit-font-smoothing: antialiased;
+	margin: 0px 0px 0px 0px;
+}
+
+// allow vanished things to actually go away
+.vanished {
+	max-width: 1px;
+}
+
+.gbc_ButtonEditWidget > .gbc_ButtonWidget, .gbc_DummyButtonEditWidget > .gbc_ButtonWidget {
+	padding: 0;
+	border-radius: 0px 4px 4px 0px;
+	border-width: 1px 1px 1px 0px;
+	border-style: solid;
+}
+.gbc_ButtonEditWidget.gbc_Focus > .gbc_EditWidget, .gbc_DummyButtonEditWidget.gbc_Focus > .gbc_EditWidget {
+	border-radius: 4px 0px 0px 4px;
+	border-width: 1px 0px 1px 1px;
+	border-style: solid;
+}
+
+.mt-toolbar {
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.mt-button {
+	box-shadow: none;
+	border-radius: 4px 4px 4px 4px;
+	border: 1px solid $theme-primary-emphasis-background-color;
+	background-color: $njm-default-button-background;
+	color: $theme-primary-color;
+	font-size: 14px;
+}
+
+[__ButtonWidget].mt-button .textimage > .gbc_imageContainer > .gbc_ImageWidget {
+	fill: $theme-primary-color;
+}
+
+.mt-button:not(.disabled):hover, .mt-button[interruptable][interruptable-active]:hover {
+	background-color: $njm-default-button-background-hover !important;
+	color: $theme-primary-color !important;
+}
+
+/* Combobox Caret */
+[__ComboBoxWidget].toggle {
+	font-size: 1.5em;
+}
+
+.gbc_UserInterfaceWidget .gbc_chromeBarContainer:not(:empty) {
+	border-bottom: none;
+}
+
+/* .gbc_FormWidget {
+	margin-top: 4px;
+} */
+
+// Hide the toolbar
+.gbc_ToolBarWidget {
+	display: none;
+}
+
+// Move the topmenu to the right
+.gbc_TopMenuWidget {
+	margin-left: auto;
+}
+
+// GroupBoxes
+.gbc_GroupTitleWidget {
+	background-color: $theme-header-color;
+	color: $njm-hightlight-color;
+	
+	> .gbc-label-text-container {
+		justify-content: left;
+	}
+}
+
+.gbc_GroupWidget {
+	padding: 10px;
+}
+.gbc_GroupWidgetContent {
+	padding: 2px 16px 10px 16px;
+}
+
+// Force the actionPanel buttons to the right
+// NOTE: 4st style for actionPanelHAlign=right doesn't work in GBC - so this does it.
+.gbc_WindowWidget .gbc_WindowMenuContainerBottom .gbc_MenuWidget .containerElement {
+	justify-content: flex-end;
+}
+
+.mt-dialog.displayed, .mt-dialog-about.displayed, .mt-dialog-menu.displayed, .mt-dialog-filetransfer.displayed {
+	background-color: transparent;
+}
+
+.mt-card {
+	background-color: whitesmoke;
+}
+.gbc_ModalWidget .mt-dialog-header {
+	background-color: $njm-hightlight-color;
+	text-align: center;
+	color: white;
+	font-size: 1.2em;
+	padding: 5px 0 3px 5px;
+}
+

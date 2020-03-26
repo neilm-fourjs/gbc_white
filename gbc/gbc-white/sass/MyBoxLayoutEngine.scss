@@ -1,0 +1,23 @@
+.g_MyBoxLayoutEngine {
+	margin: 0px;
+	padding: 0px;
+	//width: 100%;
+	//max-height: 400px;
+	overflow: scroll;
+
+  > .containerElement {
+		display: flex;
+		flex: 1 1 auto;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		overflow: auto;
+	}
+}
+
+.gbc_MySplitterWidget {
+	display: none;
+}
+
+.gbc_MyBoxWidget {
+	width: 100% !important;
+}

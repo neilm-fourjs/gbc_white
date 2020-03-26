@@ -1,0 +1,35 @@
+
+.gbc_MyHeaderBarWidget {
+	position: absolute;
+	top: 0;
+	background: $theme-header-color;
+	Height: 80px;
+	color: #434345;
+	padding: 3px 5px;
+	width: 100%;
+
+	h1 {
+		text-align: center;
+		font-size: 1.4em;
+		margin: 0px 5px 0px 0px;
+		text-transform: uppercase;
+	}
+
+	b {
+		font-size: 1em;
+	}
+}
+
+.MyHeaderBarWidget-title {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gbc_MyMainContainerWidget > header {
+	text-align: center;
+}
+
+.MyHeaderBarWidget-warning {
+	font-weight: bold;
+	color: red;
+}

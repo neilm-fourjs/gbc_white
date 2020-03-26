@@ -1,0 +1,36 @@
+
+TOPMENU
+	GROUP (  TEXT="File" )
+		COMMAND close (  TEXT="Close" , IMAGE="lsexit" , COMMENT="Close" , ACCELERATOR=escape )
+	END -- GROUP
+END -- TM
+
+LAYOUT (TEXT="Test Forms Menu", STYLE="dialog")
+VBOX
+TABLE
+{
+[f001         |f002                             ]
+[f001         |f002                             ]
+[f001         |f002                             ]
+[f001         |f002                             ]
+[f001         |f002                             ]
+[f001         |f002                             ]
+[f001         |f002                             ]
+[f001         |f002                             ]
+}
+END -- TABLE
+GRID
+{
+[ver                                            ]
+}
+END -- GRID
+END -- VBOX
+
+ATTRIBUTES
+f001 = FORMONLY.fld1, TITLE="Form Name";
+f002 = FORMONLY.fld2, TITLE="Description";
+
+LABEL ver = FORMONLY.ver;
+
+INSTRUCTIONS
+SCREEN RECORD arr (FORMONLY.fld1, FORMONLY.fld2)

@@ -1,0 +1,45 @@
+{
+	"theme-font-family": "'\"Open Sans\", Arial, Helvetica, Arial, sans-serif'",
+	"theme-font-size-ratio": "1",
+	"theme-margin-ratio": "1",
+	"theme-combobox-padding": "0px",
+	"theme-sidebar-always-visible-min-width": "2000px",
+	"theme-host-action-default-height": "36px",
+	"gbc-ChromeBarWidget-height": "36px",
+
+	"mt-field-default-height": "32px",
+	"mt-field-border-width-top": "1px",
+	"mt-field-border-width-right": "1px",
+	"mt-field-border-width-bottom": "1px",
+	"mt-field-border-width-left": "1px",
+
+	"palette-primary": "$mt-blue-grey",
+	"palette-secondary": "$mt-grey",
+	"palette-text-secondary": "$mt-black",
+	"theme-primary-background-color": "$palette-primary-800",
+	"theme-primary-emphasis-background-color": "$palette-primary-900",
+	"theme-primary-faded-background-color": "$palette-primary-100",
+	"theme-primary-color": "$mt-white",
+	"theme-secondary-color": "$palette-text-secondary-100",
+	"theme-header-color": "$mt-white",
+
+	"njm-hightlight-color": "#279dd8",
+
+	"gbc-TableWidget-unfocused-currentRow-background-color": "$theme-header-color",
+	"theme-currentrow-background-color": "$njm-hightlight-color",
+	"theme-currentrow-color": "$theme-primary-color",
+
+	"gbc-StartMenuWidget-background-color": "$theme-primary-emphasis-background-color",
+	"gbc-StartMenuWidget-color": "$theme-primary-faded-background-color",
+	"gbc-StartMenuGroupWidget-hover-color": "$theme-primary-emphasis-background-color",
+	"gbc-StartMenuCommandWidget-hover-color": "$theme-primary-background-color",
+
+	"gbc-TopMenuWidget-hover-color": "$njm-hightlight-color",
+
+	"njm-current-field-focus-border-glow": "#66afe9",
+	"njm-login-button-background": "#f7931e",
+	"njm-green-button-background": "#5cb85c",
+	"njm-red-button-background": "#d85c5c",
+	"njm-default-button-background": "$theme-primary-background-color",
+	"njm-default-button-background-hover": "$palette-primary-600"
+}

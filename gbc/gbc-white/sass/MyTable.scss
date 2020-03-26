@@ -1,0 +1,16 @@
+
+.gbc_TableColumnItemWidget {
+	border-top: 1px solid $theme-primary-faded-background-color;
+	height: 28px !important;
+	margin: 6px 0px 6px 0px;
+}
+
+/*
+.gbc_TableWidget .gbc_TableScrollArea, .gbc_TableWidget .gbc_TableRightScrollArea, .gbc_TableWidget .gbc_TableLeftScrollArea {
+	overflow-x: auto;
+}
+
+.gbc_TableWidget:not(.multiRowSelection):not(.gbc_Focus):not(.disabled) .highlight .gbc_TableColumnItemWidget .currentRow {
+	background-color: inherit;
+}
+*/

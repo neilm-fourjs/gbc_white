@@ -1,0 +1,16 @@
+{
+  "customizationSuffix": "White-1.00",
+  "themes": [
+    {
+      "name": "default",
+      "title": "White Default",
+      "conditions":["isBrowser","isDesktop"]
+    },
+    {
+      "name": "ur_default",
+      "title": "White UR",
+      "uses": ["colors/ur", "platform/ur"],
+      "conditions":["isUR"]
+    }
+  ]
+}

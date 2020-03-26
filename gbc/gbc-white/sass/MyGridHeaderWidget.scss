@@ -1,0 +1,35 @@
+
+.gbc_MyGridHeaderWidget {
+//	max-width: 1590px;
+}
+
+table.head-table {
+	margin-left: 4px;
+	margin-right: 4px;
+	width: -webkit-fill-available
+}
+
+td.head-left {
+	width: 30%;
+}
+
+td.head-right {
+	width: 30%;
+}
+
+td.head-center {
+	width: 40%;
+}
+
+.head-left {
+	font-size: .8em;
+}
+
+.head-center {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.head-right {
+	font-size: .8em;
+}

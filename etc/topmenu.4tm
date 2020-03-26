@@ -1,0 +1,42 @@
+<TopMenu>
+	<TopMenuGroup text="File">
+		<TopMenuCommand name="close" text="Close" image="lsexit" comment="Close" acceleratorName="escape"/>
+	</TopMenuGroup>
+	<TopMenuGroup text="Edit">
+		<TopMenuCommand name="batch" image="badd" text="Add Multiple records" comment="Add one or more records" acceleratorName="b"/>
+		<TopMenuCommand name="add" image="add3" text="Add a new record" comment="Add a record" acceleratorName="f4"/>
+		<TopMenuSeparator/>
+		<TopMenuCommand name="delete" text="Delete the current record" comment="Delete the current record" acceleratorName="f3"/>
+		<TopMenuCommand name="update" image="News-Edit" text="Update the current record" comment="Update the current record" acceleratorName="u"/>
+		<TopMenuSeparator/>
+		<TopMenuCommand name="defaults" image="wizard2" text="Change field Defaults" comment="Change user defaults" acceleratorName="d"/>
+		<TopMenuCommand name="view" image="view" text="View the current record" comment="View the current record" acceleratorName="v"/>
+		<TopMenuSeparator/>
+		<TopMenuCommand name="editcut" text="Cut"/>
+		<TopMenuCommand name="editcopy" text="Copy"/>
+		<TopMenuCommand name="editpaste" text="Paste"/>
+	</TopMenuGroup>
+	<TopMenuGroup text="Actions">
+		<TopMenuCommand name="menu" image="outline" text="Menu" comment="Access the menu" acceleratorName="m"/>
+		<TopMenuSeparator/>
+		<TopMenuCommand name="subscreen" image="down3" text="Move Down to a subscreen" comment="Move down to a child screen" acceleratorName="f5"/>
+		<TopMenuCommand name="parent" image="up3" text="Move back to the parent screen" comment="Move up to a parent screen" acceleratorName="f6"/>
+		<TopMenuSeparator/>
+	</TopMenuGroup>
+	<TopMenuGroup text="Find">
+		<TopMenuCommand name="full" image="research" text="Query on all fields" comment="Query all fields" acceleratorName="f"/>
+		<TopMenuCommand name="query" image="search" text="Inline Query" comment="Query pick fields" acceleratorName="q"/>
+		<TopMenuSeparator/>
+		<TopMenuCommand name="mark" image="Control-Check-Box" text="Mark selected records" comment="Mark selected pick records" acceleratorName="k"/>
+		<TopMenuSeparator/>
+		<TopMenuCommand name="sort" image="DSort" text="Toggle the sort order" comment="Change the sort order" acceleratorName="s"/>
+		<TopMenuSeparator/>
+		<TopMenuCommand name="refresh" image="refresh2" text="Refresh the list of records" comment="Refresh the display" acceleratorName="r"/>
+	</TopMenuGroup>
+	<TopMenuGroup text="Help">
+		<TopMenuCommand name="help" image="help2" text="DMSR3.5 Help" comment="Help" acceleratorName="f1"/>
+		<TopMenuSeparator/>
+		<TopMenuCommand name="email" image="letter2" text="Create an E-mail" comment="Create an e-mail"/>
+		<TopMenuCommand name="support" image="user2" text="E-mail Langdon Support" comment="Contact Langdon support"/>
+	</TopMenuGroup>
+</TopMenu>

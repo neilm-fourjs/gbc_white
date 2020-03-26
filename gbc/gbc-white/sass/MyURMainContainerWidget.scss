@@ -1,0 +1,65 @@
+
+.gbc_MyURMainContainerWidget {
+	//width: 1600px;
+	width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+//  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > header {
+    padding: 0px;
+  }
+  > .containerElement {
+		//width: 1600px;
+  	margin: 0 auto;
+
+		flex: 1 1 0px;
+		position: absolute;
+		top: 25px;
+		bottom: 0;
+		left: 0;
+		right: 0;
+  }
+}
+
+.gbc_WindowMainContainer > .gbc_WindowMenuContainerMiddle > .gbc_WindowContent {
+  padding: 3px 2px 1px 2px;
+}
+
+/* Customize the Chromebar */
+.gbc_chromeBarContainer {
+	width: 100%;
+  margin: 0 auto;
+	position: fixed;
+	line-height: 30px;
+	top: 0px;
+	background-color: transparent;
+	> .mt-toolbar {
+		background-color: transparent;
+		color: $theme-secondary-color;
+	}
+}
+.gbc_ChromeBarWidget.mt-toolbar .containerElement {
+	max-width: 100%;
+}
+.gbc_ChromeBarWidget.mt-toolbar .mt-toolbar-title {
+	display: none;
+}
+.is-not-mobile-device .gbc_ChromeBarWidget.mt-toolbar .mt-sidebar-toggle {
+	display: none;
+}
+// hide bookmark button
+.gbc_ChromeBarItemBookmarkWidget {
+	display: none !important;
+}
+
+.gbc_UserInterfaceWidget {
+	background-color: transparent;
+}
+
+.gbc_UserInterfaceWidget > .gbc_barsContainer {
+	background-color: transparent;
+}
+

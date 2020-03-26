@@ -1,0 +1,34 @@
+
+.gbc_TopMenuWidget {
+
+  &:not(.open) > .gbc_TopMenuGroupWidget:hover {
+    color: $gbc-TopMenuWidget-hover-color;
+		background-color: $theme-primary-color;
+		border-bottom: 3px solid $gbc-TopMenuWidget-hover-color;
+  }
+
+
+  .gbc_TopMenuGroupWidget {
+
+		padding: 2px 20px 0px 20px;
+		line-height: 20px;
+		text-transform: uppercase;
+		border-bottom: 3px solid $theme-primary-color;
+
+    &.current{
+      color: $gbc-TopMenuWidget-hover-color;
+			background-color: $theme-primary-color;
+			border-bottom: 3px solid $gbc-TopMenuWidget-hover-color;
+    }
+
+    &:not(.disabled).touchHover{
+      color: $gbc-TopMenuWidget-hover-color;
+			background-color: $theme-primary-color;
+    }
+	}
+}
+
+.gbc_DropDownWidget {
+	background-color: $gbc-TopMenuWidget-hover-color;
+	color: $theme-primary-color;
+}

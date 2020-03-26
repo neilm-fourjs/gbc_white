@@ -1,0 +1,60 @@
+
+LAYOUT (TEXT="Test Form")
+VBOX
+GRID heading (STYLE="heading")
+{
+Heading stuff
+}
+END -- GRID
+
+TABLE 
+{
+[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
+[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
+[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
+[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
+[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
+}
+END -- TABLE
+
+VBOX (STYLE="tiled"
+)
+GROUP g1 ( TEXT="Group 1" )
+GRID
+{
+Group One
+}
+END -- GRID
+END -- GROUP
+
+GROUP g2 ( TEXT="Group 2" )
+GRID
+{
+Group Two
+}
+END -- GRID
+END -- GROUP
+
+GROUP g3 ( TEXT="Group 3" )
+GRID
+{
+Group THree
+}
+END -- GRID
+END -- GROUP
+
+END -- VBOX
+END -- VBOX
+
+ATTRIBUTES
+f001 = FORMONLY.prod_code, TITLE="Prod Code";
+f002 = FORMONLY.descr, TITLE="Description";
+f003 = FORMONLY.ordered, TITLE="Ordered";
+f004 = FORMONLY.cost, TITLE="Cost";
+f005 = FORMONLY.price, TITLE="Price";
+f006 = FORMONLY.qty, TITLE="Qty";
+f007 = FORMONLY.tax, TITLE="Tax";
+f008 = FORMONLY.total, TITLE="Total";
+
+INSTRUCTIONS
+SCREEN RECORD arr ( FORMONLY.prod_code THRU  FORMONLY.total )

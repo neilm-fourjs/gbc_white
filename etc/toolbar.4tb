@@ -1,0 +1,23 @@
+      <ToolBar>
+        <ToolBarItem name="batch" text="Batch Add" image="badd" comment="Add multiple records"/>
+        <ToolBarItem name="add" text="Add" image="add3" comment="Add a record"/>
+        <ToolBarItem name="delete" text="Delete" image="lsdelete" comment="Delete current record"/>
+        <ToolBarItem name="update" text="Update" image="newsedit" comment="Update current record"/>
+        <ToolBarItem name="view" text="View" image="view" comment="View current record"/>
+        <ToolBarItem name="defaults" text="Defaults" image="wizard2" comment="Change user defaults"/>
+        <ToolBarSeparator/>
+        <ToolBarItem name="refresh" text="Refresh" image="refresh1" comment="Refresh record list"/>
+        <ToolBarItem name="menu" text="Menu" image="outline" comment="Access menu"/>
+        <ToolBarItem name="subscreen" text="Move Down" image="down3" comment="Move down to child screen"/>
+        <ToolBarItem name="parent" text="Move Up" image="up3" comment="Move up to parent screen"/>
+        <ToolBarSeparator/>
+        <ToolBarItem name="full" text="Full Query" image="research" comment="Query all fields"/>
+        <ToolBarItem name="query" text="Query" image="search" comment="Query pick fields"/>
+        <ToolBarItem name="mark" text="Mark" image="CheckBox" comment="Mark multiple records"/>
+        <ToolBarItem name="sort" text="Sort" image="DSort" comment="Change sort order"/>
+        <ToolBarSeparator/>
+        <ToolBarItem name="email" text="E-mail" image="letter2" comment="Send e-mail"/>
+        <ToolBarItem name="support" text="Support" image="user2" comment="Contact Langdon support"/>
+        <ToolBarSeparator/>
+        <ToolBarItem name="help" text="Help" image="help2" comment="Help"/>
+      </ToolBar>

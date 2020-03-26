@@ -10,7 +10,7 @@ Property of Four Js*
 -->
 
 <StyleList>
-	<Style name=".njm">
+	<Style name="Window.form">
 		<StyleAttribute name="actionPanelPosition" value="bottom" />
 		<StyleAttribute name="ringMenuPosition" value="bottom" />
 		<StyleAttribute name="actionPanelHAlign" value="right" />
@@ -30,206 +30,81 @@ Property of Four Js*
 		<StyleAttribute name="position"  value="accordion" />
 	</Style>
 
-	<Style name="Window.main">
-		<StyleAttribute name="windowType" value="normal" />
-		<StyleAttribute name="startMenuPosition" value="menu" />
+	<Style name="Label.header">
+		<StyleAttribute name="fontWeight"  value="bold" />
+		<StyleAttribute name="fontSize"  value="1.2em" />
 	</Style>
-	<Style name="Window.main2">
-		<StyleAttribute name="windowType" value="normal" />
-		<StyleAttribute name="actionPanelPosition" value="none" />
-		<StyleAttribute name="ringMenuPosition" value="none" />
-	</Style>
-	<Style name="Window.dialog">
-		<StyleAttribute name="windowType" value="modal" />
-		<StyleAttribute name="sizable" value="no" />
-		<StyleAttribute name="position" value="center" />
-		<StyleAttribute name="actionPanelPosition" value="bottom" />
-		<StyleAttribute name="ringMenuPosition" value="bottom" />
-		<StyleAttribute name="toolBarPosition" value="none" />
-		<StyleAttribute name="statusBarType" value="none" />
-		<StyleAttribute name="errorMessagePosition" value="popup" />
-	</Style>
-	<Style name="Window.dialog2">
-		<StyleAttribute name="windowType" value="modal" />
-		<StyleAttribute name="sizable" value="no" />
-		<StyleAttribute name="position" value="center" />
-		<StyleAttribute name="actionPanelPosition" value="none" />
-		<StyleAttribute name="ringMenuPosition" value="none" />
-		<StyleAttribute name="toolBarPosition" value="none" />
-		<StyleAttribute name="statusBarType" value="none" />
-		<StyleAttribute name="errorMessagePosition" value="popup" />
-	</Style>
-	<Style name="Window.dialog3">
-		<StyleAttribute name="windowType" value="modal" />
-		<StyleAttribute name="sizable" value="yes" />
-		<StyleAttribute name="toolBarPosition" value="none" />
-		<StyleAttribute name="actionPanelPosition" value="none" />
-		<StyleAttribute name="ringMenuPosition" value="none" />
-		<StyleAttribute name="statusBarType" value="none" />
-		<StyleAttribute name="errorMessagePosition" value="popup" />
-	</Style>
-	<Style name="Window.dialog4">
-		<StyleAttribute name="windowType" value="modal" />
-		<StyleAttribute name="sizable" value="yes" />
-		<StyleAttribute name="actionPanelPosition" value="bottom" />
-		<StyleAttribute name="ringMenuPosition" value="none" />
-		<StyleAttribute name="statusBarType" value="none" />
-		<StyleAttribute name="errorMessagePosition" value="popup" />
-	</Style>
-	<Style name="Window.viewer">
-		<StyleAttribute name="windowType" value="modal" />
-		<StyleAttribute name="windowSystemMenu" value="yes" />
-		<StyleAttribute name="windowOptionMinimize" value="no" />
-		<StyleAttribute name="windowOptionMaximize" value="no" />
-		<StyleAttribute name="sizable" value="yes" />
-		<StyleAttribute name="actionPanelPosition" value="none" />
-		<StyleAttribute name="ringMenuPosition" value="none" />
-		<StyleAttribute name="toolBarPosition" value="none" />
-		<StyleAttribute name="statusBarType" value="none" />
+	<Style name="Label.footer">
+		<StyleAttribute name="fontWeight"  value="bold" />
+		<StyleAttribute name="fontSize"  value=".8em" />
 	</Style>
 
-	<Style name=".FormTitle">
-		<StyleAttribute name="fontSize" value="large"/>
-		<StyleAttribute name="fontWeight" value="bold"/>
-	</Style>
-	<Style name=".SmallFormTitle">
-		<StyleAttribute name="fontSize" value="small"/>
-		<StyleAttribute name="fontWeight" value="bold"/>
-	</Style>
-	<Style name=".PickHistory">
-		<StyleAttribute name="fontFamily" value="ms-sans-serif"/>
-		<StyleAttribute name="fontSize" value="8pt"/>
-	</Style>
-	<Style name="Window">
-		<StyleAttribute name="windowType" value="normal"/>
-		<StyleAttribute name="border" value="normal"/>
-		<StyleAttribute name="sizable" value="yes"/>
-		<StyleAttribute name="actionPanelPosition" value="none"/>
-		<StyleAttribute name="ringMenuPosition" value="none"/>
-		<StyleAttribute name="windowOptionClose" value="yes"/>
-		<StyleAttribute name="statusBarType" value="panels4"/>
-		<StyleAttribute name="windowState" value="normal"/>
-		<StyleAttribute name="startMenuPosition" value="poptree"/>
-		<StyleAttribute name="startMenuShortcut" value="control-shift-L"/>
-		<StyleAttribute name="startMenuSize" value="small"/>
-	</Style>
-	<Style name="Window.Form">
-		<StyleAttribute name="windowType" value="normal"/>
-		<StyleAttribute name="border" value="normal"/>
-		<StyleAttribute name="sizable" value="yes"/>
-		<!--StyleAttribute name="actionPanelPosition" value="none"/-->
-		<!--StyleAttribute name="ringMenuPosition" value="none"/-->
-		<StyleAttribute name="windowOptionClose" value="yes"/>
-		<StyleAttribute name="statusBarType" value="panels4"/>
-		<StyleAttribute name="windowState" value="normal"/>
-		<StyleAttribute name="startMenuPosition" value="poptree"/>
-		<StyleAttribute name="startMenuShortcut" value="control-shift-L"/>
-		<StyleAttribute name="startMenuSize" value="small"/>
-	</Style>
-	<Style name="Window.Pick">
-		<StyleAttribute name="windowType" value="normal"/>
-		<StyleAttribute name="border" value="normal"/>
-		<StyleAttribute name="sizable" value="yes"/>
-		<StyleAttribute name="actionPanelPosition" value="none"/>
-		<StyleAttribute name="ringMenuPosition" value="none"/>
-		<StyleAttribute name="windowOptionClose" value="yes"/>
-		<StyleAttribute name="statusBarType" value="panels4"/>
-		<StyleAttribute name="windowState" value="normal"/>
-		<StyleAttribute name="startMenuPosition" value="poptree"/>
-		<StyleAttribute name="startMenuShortcut" value="control-shift-L"/>
-		<StyleAttribute name="startMenuSize" value="small"/>
-		<StyleAttribute name="forceDefaultSettings" value="yes"/>
-	</Style>
-	<Style name="Window.MainMenu">
-		<StyleAttribute name="windowType" value="normal"/>
-		<StyleAttribute name="border" value="normal"/>
-		<StyleAttribute name="sizable" value="yes"/>
-		<StyleAttribute name="actionPanelPosition" value="none"/>
-		<StyleAttribute name="ringMenuPosition" value="none"/>
-		<StyleAttribute name="windowOptionClose" value="yes"/>
-		<StyleAttribute name="statusBarType" value="none"/>
-		<StyleAttribute name="windowState" value="normal"/>
-		<StyleAttribute name="startMenuPosition" value="poptree"/>
-		<StyleAttribute name="startMenuShortcut" value="control-shift-L"/>
-		<StyleAttribute name="startMenuSize" value="small"/>
-	</Style>
-	<Style name="Window.SimpleForm">
-		<StyleAttribute name="windowType" value="modal"/>
-		<StyleAttribute name="border" value="normal"/>
-		<StyleAttribute name="sizable" value="no"/>
-		<StyleAttribute name="actionPanelPosition" value="none"/>
-		<StyleAttribute name="ringMenuPosition" value="none"/>
-		<StyleAttribute name="windowOptionClose" value="yes"/>
-		<StyleAttribute name="statusBarType" value="panels4"/>
-		<StyleAttribute name="windowState" value="normal"/>
-		<StyleAttribute name="position" value="center2"/>
-		<StyleAttribute name="startMenuPosition" value="poptree"/>
-		<StyleAttribute name="startMenuShortcut" value="control-shift-L"/>
-		<StyleAttribute name="startMenuSize" value="small"/>
-		<StyleAttribute name="forceDefaultSettings" value="no"/>
-	</Style>
-	<Style name="Window.SimpleMenu">
-		<StyleAttribute name="windowType" value="modal"/>
-		<StyleAttribute name="border" value="normal"/>
-		<StyleAttribute name="sizable" value="no"/>
-		<StyleAttribute name="actionPanelPosition" value="none"/>
-		<StyleAttribute name="ringMenuPosition" value="none"/>
-		<StyleAttribute name="windowOptionClose" value="yes"/>
-		<StyleAttribute name="statusBarType" value="none"/>
-		<StyleAttribute name="windowState" value="normal"/>
-		<StyleAttribute name="position" value="center2"/>
-		<StyleAttribute name="startMenuPosition" value="poptree"/>
-		<StyleAttribute name="startMenuShortcut" value="control-shift-L"/>
-		<StyleAttribute name="startMenuSize" value="small"/>
-		<StyleAttribute name="forceDefaultSettings" value="yes"/>
-	</Style>
-	<Style name="Window.Naked">
-		<StyleAttribute name="windowType" value="modal"/>
-		<StyleAttribute name="border" value="tool"/>
-		<StyleAttribute name="sizable" value="no"/>
-		<StyleAttribute name="windowOptionClose" value="no"/>
-		<StyleAttribute name="windowOptionMaximize" value="no"/>
-		<StyleAttribute name="windowOptionMinimize" value="no"/>
-		<StyleAttribute name="statusBarType" value="none"/>
-		<StyleAttribute name="actionPanelPosition" value="none"/>
-		<StyleAttribute name="ringMenuPosition" value="none"/>
-		<StyleAttribute name="windowState" value="normal"/>
-		<StyleAttribute name="startMenuPosition" value="poptree"/>
-		<StyleAttribute name="startMenuShortcut" value="control-shift-L"/>
-		<StyleAttribute name="startMenuSize" value="small"/>
-		<StyleAttribute name="forceDefaultSettings" value="no"/>
-		<StyleAttribute name="formScroll" value="no"/>
-	</Style>
-	<Style name="Window.Recreate">
-		<StyleAttribute name="windowType" value="normal"/>
-		<StyleAttribute name="border" value="normal"/>
-		<StyleAttribute name="sizable" value="yes"/>
-		<StyleAttribute name="actionPanelPosition" value="none"/>
-		<StyleAttribute name="ringMenuPosition" value="none"/>
-		<StyleAttribute name="windowOptionClose" value="yes"/>
-		<StyleAttribute name="statusBarType" value="panels4"/>
-		<StyleAttribute name="windowState" value="normal"/>
-	</Style>
-	<Style name="Window.Menu">
-		<StyleAttribute name="windowType" value="normal"/>
-		<StyleAttribute name="border" value="normal"/>
-		<StyleAttribute name="sizable" value="yes"/>
-		<StyleAttribute name="actionPanelPosition" value="none"/>
-		<StyleAttribute name="ringMenuPosition" value="top"/>
-		<StyleAttribute name="windowOptionClose" value="yes"/>
-		<StyleAttribute name="statusBarType" value="panels4"/>
-		<StyleAttribute name="windowState" value="normal"/>
-	</Style>
-	<Style name="Table.picklist">
-		<StyleAttribute name="highlightCurrentCell" value="no"/>
-		<StyleAttribute name="highlightCurrentRow" value="yes"/>
-		<StyleAttribute name="showGrid" value="no"/>
-	</Style>
-	<Style name="ComboBox.Completer">
-		<StyleAttribute name="comboboxCompleter" value="yes"/>
-		<StyleAttribute name="completionTimeout" value="10"/>
-	</Style>
-	<Style name="Label.Header">
-		<StyleAttribute name="fontSize" value="normal"/>
-	</Style>
+  <Style name="Window">
+     <StyleAttribute name="windowType" value="normal" />
+  </Style>
+  <Style name="Window.main">
+     <StyleAttribute name="windowType" value="normal" />
+     <StyleAttribute name="startMenuPosition" value="menu" />
+  </Style>
+  <Style name="Window.main2">
+     <StyleAttribute name="windowType" value="normal" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+  </Style>
+  <Style name="Window.dialog">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="no" />
+     <StyleAttribute name="position" value="center" />
+     <StyleAttribute name="actionPanelPosition" value="bottom" />
+     <StyleAttribute name="ringMenuPosition" value="bottom" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+     <StyleAttribute name="errorMessagePosition" value="popup" />
+  </Style>
+  <Style name="Window.dialog2">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="no" />
+     <StyleAttribute name="position" value="center" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+     <StyleAttribute name="errorMessagePosition" value="popup" />
+  </Style>
+  <Style name="Window.dialog3">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="yes" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+     <StyleAttribute name="errorMessagePosition" value="popup" />
+  </Style>
+  <Style name="Window.dialog4">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="yes" />
+     <StyleAttribute name="actionPanelPosition" value="bottom" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+     <StyleAttribute name="errorMessagePosition" value="popup" />
+  </Style>
+  <Style name="Window.naked">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="border" value="tool" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+  </Style>
+  <Style name="Window.viewer">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="windowSystemMenu" value="yes" />
+     <StyleAttribute name="windowOptionMinimize" value="no" />
+     <StyleAttribute name="windowOptionMaximize" value="no" />
+     <StyleAttribute name="sizable" value="yes" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+  </Style>
 </StyleList>

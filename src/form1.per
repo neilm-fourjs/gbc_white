@@ -1,24 +1,26 @@
 
-LAYOUT (TEXT="Test Form")
-VBOX
-GRID heading (STYLE="heading")
+LAYOUT (TEXT="Test Form", STYLE="form")
+VBOX main
+GRID header (STYLE="header")
 {
-Heading stuff
+[f000                        ]
 }
 END -- GRID
-
+VBOX split (SPLITTER)
 TABLE 
 {
-[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
-[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
-[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
-[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
-[f001    |f002                  |f003            |f004      |f005      |f006 |f007    |f008         ]
+[a001    |a002                  |a003            |a004      |a005      |a006 |a007    |a008         ]
+[a001    |a002                  |a003            |a004      |a005      |a006 |a007    |a008         ]
+[a001    |a002                  |a003            |a004      |a005      |a006 |a007    |a008         ]
+[a001    |a002                  |a003            |a004      |a005      |a006 |a007    |a008         ]
+[a001    |a002                  |a003            |a004      |a005      |a006 |a007    |a008         ]
+[a001    |a002                  |a003            |a004      |a005      |a006 |a007    |a008         ]
+[a001    |a002                  |a003            |a004      |a005      |a006 |a007    |a008         ]
+[a001    |a002                  |a003            |a004      |a005      |a006 |a007    |a008         ]
 }
 END -- TABLE
 
-VBOX (STYLE="tiled"
-)
+VBOX tiled (STYLE="tiled")
 GROUP g1 ( TEXT="Group 1" )
 GRID
 {
@@ -68,20 +70,32 @@ Group Five
 END -- GRID
 END -- GROUP
 
-END -- VBOX
-END -- VBOX
+END -- VBOX tiled
+END -- VBOX split
+
+GRID footer (STYLE="footer")
+{
+[f099                                 ]
+}
+END -- GRID
+END -- VBOX main
 
 ATTRIBUTES
-f001 = FORMONLY.prod_code, TITLE="Prod Code";
-f002 = FORMONLY.descr, TITLE="Description";
-f003 = FORMONLY.ordered, TITLE="Ordered";
-f004 = FORMONLY.cost, TITLE="Cost";
-f005 = FORMONLY.price, TITLE="Price";
-f006 = FORMONLY.qty, TITLE="Qty";
-f007 = FORMONLY.tax, TITLE="Tax";
-f008 = FORMONLY.total, TITLE="Total";
+
+LABEL f000 = FORMONLY.l_title, STYLE="header";
+
+a001 = FORMONLY.prod_code, TITLE="Prod Code";
+a002 = FORMONLY.descr, TITLE="Description";
+a003 = FORMONLY.ordered, TITLE="Ordered";
+a004 = FORMONLY.cost, TITLE="Cost";
+a005 = FORMONLY.price, TITLE="Price";
+a006 = FORMONLY.qty, TITLE="Qty";
+a007 = FORMONLY.tax, TITLE="Tax";
+a008 = FORMONLY.total, TITLE="Total";
 
 TEXTEDIT b001 = FORMONLY.l_text;
+
+LABEL f099 = FORMONLY.l_footer, STYLE="footer";
 
 INSTRUCTIONS
 SCREEN RECORD arr ( FORMONLY.prod_code THRU  FORMONLY.total )

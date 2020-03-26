@@ -80,7 +80,7 @@ PRIVATE FUNCTION form1()
 		LET l_arr[x].cost = x * 8
 		LET l_arr[x].qty = x
 		LET l_arr[x].tax = 20
-		LET l_arr[x].total = l_arr[x].price * ( l_arr[x].tax / 100 ) * l_arr[x].qty
+		LET l_arr[x].total = (l_arr[x].price+(l_arr[x].price * ( l_arr[x].tax / 100 ))) * l_arr[x].qty
 	END FOR
 
 	DISPLAY ARRAY l_arr TO arr.*

@@ -18,7 +18,7 @@ Assuming you have also done the prerequisites in the project folder you should b
 
 ```
 $ make
-make[1]: Entering directory '/opt/fourJs/Customers/Langdon/gitlab/langdon/gbc/gbc-white'
+make[1]: Entering directory 'gbc/gbc-white'
 Building GBC ...
 __clean:localdist     231ms  ▇ 1%
 copy:clientlibs       308ms  ▇ 2%
@@ -30,7 +30,7 @@ copy:resources        471ms  ▇ 2%
 themes:compile         2.1s  ▇▇▇▇▇ 11%
 Total 19.8s
 
-make[1]: Leaving directory '/opt/fourJs/Customers/Langdon/gitlab/langdon/gbc/gbc-white'
+make[1]: Leaving directory 'gbc/gbc-white'
 
 $ l distbin/gbc-white.zip
 -rw-rw-r-- 1 neilm neilm 4899118 Mar 23 10:00 distbin/gbc-white.zip

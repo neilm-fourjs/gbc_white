@@ -23,6 +23,7 @@ GROUP g1 ( TEXT="Group 1" )
 GRID
 {
 Group One
+Some Content will go here!
 }
 END -- GRID
 END -- GROUP
@@ -31,6 +32,7 @@ GROUP g2 ( TEXT="Group 2" )
 GRID
 {
 Group Two
+Some more Content will go here!
 }
 END -- GRID
 END -- GROUP
@@ -38,7 +40,30 @@ END -- GROUP
 GROUP g3 ( TEXT="Group 3" )
 GRID
 {
-Group THree
+Group Three
+Some Content will go here!
+test test
+test test
+}
+END -- GRID
+END -- GROUP
+
+GROUP g4 ( TEXT="Group 4" )
+GRID
+{
+Group Four
+Some Content will go here!
+[b001                    ]
+[                        ]
+}
+END -- GRID
+END -- GROUP
+
+
+GROUP g5 ( TEXT="Group 5" )
+GRID
+{
+Group Five
 }
 END -- GRID
 END -- GROUP
@@ -55,6 +80,8 @@ f005 = FORMONLY.price, TITLE="Price";
 f006 = FORMONLY.qty, TITLE="Qty";
 f007 = FORMONLY.tax, TITLE="Tax";
 f008 = FORMONLY.total, TITLE="Total";
+
+TEXTEDIT b001 = FORMONLY.l_text;
 
 INSTRUCTIONS
 SCREEN RECORD arr ( FORMONLY.prod_code THRU  FORMONLY.total )

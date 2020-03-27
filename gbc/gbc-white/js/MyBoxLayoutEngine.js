@@ -17,7 +17,7 @@ modulum('MyBoxLayoutEngine', ['DBoxLayoutEngine'],
      * @memberOf classes
      * @extends classes.DBoxLayoutEngine
      */
-    cls.MyBoxLayoutEngine = context.oo.Class(cls.DBoxLayoutEngine, function() {
+    cls.MyBoxLayoutEngine = context.oo.Class(cls.DBoxLayoutEngine, function($super) {
       return /** @lends classes.MyBoxLayoutEngine.prototype */ {
         __name: "MyBoxLayoutEngine",
         _mainSizeGetter: "getHeight",
@@ -34,12 +34,13 @@ modulum('MyBoxLayoutEngine', ['DBoxLayoutEngine'],
          */
         _setItemClass: function(position, start, size) {
           this._styleRules[".g_measured .gbc_MyBoxWidget" + this._widget._getCssSelector() +
-            ">div>.containerElement>.g_BoxElement:nth-of-type(" + ( position + 1) + ")"] = {
+            ">div>.containerElement>.g_BoxElement:nth-of-type(" + (
+              position + 1) +
+            ")"] = {
             top: cls.Size.cachedPxImportant(start),
             height: cls.Size.cachedPxImportant(size)
           };
         },
-
         /**
          * @inheritDoc
          */
@@ -65,7 +66,16 @@ modulum('MyBoxLayoutEngine', ['DBoxLayoutEngine'],
          * @inheritDoc
          */
         _isStretched: function(widget) {
-          return widget.getLayoutEngine().isXStretched();
+          return widget.getLayoutEngine().isYStretched();
+        },
+
+        /**
+         * @inheritDoc
+         */
+        _setOppositeMaximalSize: function(widget, size) {
+          var isSelfWidgetChildrenStretched = widget === this._widget &&
+            this._widget.getLayoutInformation().isChildrenXStretched();
+          return $super._setOppositeMaximalSize.call(this, widget, isSelfWidgetChildrenStretched ? cls.Size.maximal : size);
         }
       };
     });

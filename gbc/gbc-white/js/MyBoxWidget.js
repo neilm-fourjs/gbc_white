@@ -3,7 +3,7 @@
 /// (c) Copyright Four Js 2015, 2019. All Rights Reserved.
 /// * Trademark of Four Js Development Tools Europe Ltd
 ///   in the United States and elsewhere
-///
+/// 
 /// This file can be modified by licensees according to the
 /// product manual.
 /// FOURJS_END_COPYRIGHT
@@ -36,13 +36,28 @@ modulum('MyBoxWidget', ['BoxWidget', 'WidgetFactory'],
         _initLayout: function() {
           this._layoutInformation = new cls.LayoutInformation(this);
           this._layoutEngine = new cls.MyBoxLayoutEngine(this);
-					this._layoutInformation._maximal.setWidth(1600);
+          var rawMeasure = this._layoutInformation.getRawMeasure();
+          rawMeasure.setHeight("300px");
         },
         /**
          * @inheritDoc
          */
         _createSplitter: function() {
-          return cls.WidgetFactory.createWidget("MyBoxSplitter", this.getBuildParameters());
+          return cls.WidgetFactory.createWidget("VBoxSplitter", this.getBuildParameters());
+        },
+        /**
+         * Get the Data area height
+         * @returns {number} scroll data area height
+         */
+        getDataAreaHeight: function() {
+          return this.getContainerElement().getBoundingClientRect().height;
+        },
+        /**
+         * Get the Data area width
+         * @returns {number} scroll data area width
+         */
+        getDataAreaWidth: function() {
+          return this.getContainerElement().getBoundingClientRect().width;
         },
         /**
          * @inheritDoc

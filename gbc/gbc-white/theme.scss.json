@@ -23,7 +23,7 @@
 	"theme-secondary-color": "$palette-text-secondary-100",
 	"theme-header-color": "$mt-white",
 
-	"njm-hightlight-color": "#279dd8",
+	"njm-hightlight-color": "#3e6066",
 
 	"gbc-TableWidget-unfocused-currentRow-background-color": "$theme-header-color",
 	"theme-currentrow-background-color": "$njm-hightlight-color",
